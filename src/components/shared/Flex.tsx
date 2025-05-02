@@ -9,7 +9,7 @@ interface FlexInterface {
   marginTop?: string
   marginBottom?: string
   margin?: string
-  align: 'center' | 'flex-start' | 'flex-end'
+  align?: 'center' | 'flex-start' | 'flex-end'
   justify?: 'center' | 'flex-start' | 'flex-end'
   gap?: string
   padding?: string
