@@ -6,8 +6,8 @@ interface ButtonInterface {
   withBorder?: boolean
   withShadow?: boolean
   borderRadius?: number
-  bgColor?: 'string'
-  color?: 'string'
+  bgColor?: string
+  color?: string
   sx?: CSSProperties
   align?: 'center' | 'start' | 'end'
   justify?: 'center' | 'start' | 'end'

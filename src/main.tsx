@@ -6,13 +6,16 @@ import { Global, ThemeProvider } from '@emotion/react'
 import { Theme } from './theme'
 import { globalStyles } from './globalStyles'
 import { CartContextProvider } from './context/CartContext/CartContextProvider'
+import { CookiesProvider } from 'react-cookie'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider theme={Theme}>
       <Global styles={globalStyles} />
       <CartContextProvider>
-        <RouterProvider router={Router} />
+        <CookiesProvider defaultSetOptions={{ path: '/' }}>
+          <RouterProvider router={Router} />
+        </CookiesProvider>
       </CartContextProvider>
     </ThemeProvider>
   </StrictMode>
