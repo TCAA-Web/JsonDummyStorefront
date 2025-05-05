@@ -6,11 +6,26 @@ export const Home = () => {
   return (
     <Paper margin='32px auto' width='75%' elevation={1}>
       <Helmet>
-        <meta property='og:title' content='Dummy JSON store - Home page' />
-        <meta property='og:description' content='A fake store made with react as an excersise' />
+        <title>Dummy Json Store</title>
+        <meta name='description' content='This is a test store made using dummyjson' />
+
+        <meta property='og:url' content='https://dummyjsonstorefront.netlify.app' />
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content='Dummy Json Store' />
+        <meta property='og:description' content='This is a test store made using dummyjson' />
         <meta
           property='og:image'
-          content='https://dummyimage.com/600x400/73bdff/ffffff&text=Dummy+Json+Store'
+          content='https://opengraph.b-cdn.net/production/images/03adcc17-725a-4894-b74d-a412eb941034.jpg?token=FMV1AZFhGla_Zf71loxqVZiI3JjhtfD95PVkq-71fls&height=800&width=1200&expires=33282437018'
+        />
+
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta property='twitter:domain' content='dummyjsonstorefront.netlify.app' />
+        <meta property='twitter:url' content='https://dummyjsonstorefront.netlify.app' />
+        <meta name='twitter:title' content='Dummy Json Store' />
+        <meta name='twitter:description' content='This is a test store made using dummyjson' />
+        <meta
+          name='twitter:image'
+          content='https://opengraph.b-cdn.net/production/images/03adcc17-725a-4894-b74d-a412eb941034.jpg?token=FMV1AZFhGla_Zf71loxqVZiI3JjhtfD95PVkq-71fls&height=800&width=1200&expires=33282437018'
         />
       </Helmet>
       <Typography variant='h1'>Welcome</Typography>
